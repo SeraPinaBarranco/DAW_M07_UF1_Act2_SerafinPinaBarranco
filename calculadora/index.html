@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="calculos.php" method="post">
+        <fieldset>
+            <input type="number" name="num1" id="">
+            <input type="number" name="num2" id="">
+        </fieldset>
+        
+        <fieldset>
+            <input type="radio" id="suma" name="operacion" value="suma">
+            <label for="suma">Suma</label><br>
+            <input type="radio" id="resta" name="operacion" value="resta">
+            <label for="resta">Resta</label><br>
+            <input type="radio" id="multi" name="operacion" value="multi">
+            <label for="multi">Multiplicacion</label><br>
+            <input type="radio" id="divi" name="operacion" value="divi">
+            <label for="divi">Division</label>
+        </fieldset>
+
+        <input type="submit" value="Calcular">
+    </form>
+</body>
+</html>

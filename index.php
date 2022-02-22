@@ -14,22 +14,58 @@
         ?>
 
     <h2>--- Fin actividad ---</h2>
+
+    <h2>Actividad 1.2</h2>
+        <?php 
+            echo "<a href='calculadora/index.html'>Ir a calculadora</a>";
+        ?>
+
+    <h2>--- Fin actividad ---</h2>
+
+    <h2>Actividad 1.3</h2>
+        <?php 
+            echo "<a href='bucles/index.html'>Ir a bucles faciles</a>";
+        ?>
+    <h2>--- Fin actividad ---</h2>
+
+    <h2>Actividad 1.4</h2>
+        <?php 
+            echo "<a href='nota/index.html'>Ir a notas</a>";
+        ?>
+    <h2>--- Fin actividad ---</h2>
 </body>
 </html>
 
 <?php
     function notasArray(){
-        $alumnos = ["Ana"=>6, "Marcos"=> 5, "Laura"=>8];
+        $alumnos = array();
+        $alumnos["Ana"]=6; 
+        $alumnos["Marcos"]=5;
+        $alumnos["Laura"]=8;
 
+        echo("<h3>Notas</h3>");
+        $notaAlta= max($alumnos);
+        $notaMin= min($alumnos);
 
+        foreach ($alumnos as $clave => $value) {
+            if($value == $notaAlta)echo("<p>El alumno $clave tiene una nota de $value, la mas alta!!</p>");           
+        }
+        foreach ($alumnos as $clave => $value) {
+            if($value == $notaMin)echo("<p>El alumno $clave tiene una nota de $value, la mas baja</p>");
+        }
 
-        sort($alumnos);
-        echo("<h3>Notas ordenadas</h3>");
-        // for ($i=0; $i < count($alumnos); $i++) { 
-        //     echo("<p>El alumno $alumnos($i) tiene una nota de</p>");
-        // }
-        foreach ($alumnos as  $value) {
-            echo("<p>El alumno * tiene una nota de $value</p>");
+        $suma = 0;
+        foreach($alumnos as $value){
+            $suma += $value;
+        }
+        $media = sprintf('%.2f', $suma / count($alumnos));
+        echo("<p>La nota media de la clase es:  $media</p>");
+
+        echo("<h3>Notas ordenas por su valor</h3>");
+        arsort($alumnos);
+       
+        foreach ($alumnos as $key => $value) {
+            echo("<p>La nota de $key es $value</p>");
         }
         
     }
