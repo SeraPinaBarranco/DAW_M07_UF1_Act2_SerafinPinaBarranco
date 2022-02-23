@@ -33,6 +33,12 @@
             echo "<a href='nota/index.html'>Ir a notas</a>";
         ?>
     <h2>--- Fin actividad ---</h2>
+
+    <h2>Actividad 1.5</h2>
+        <?php 
+            echo "<a href='dni/dni.html'>Ir a calcular letra DNI</a>";
+        ?>
+    <h2>--- Fin actividad ---</h2>
 </body>
 </html>
 
