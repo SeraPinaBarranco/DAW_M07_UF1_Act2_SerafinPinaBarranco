@@ -11,7 +11,7 @@
         //if($nota >= 9 and $nota < 10)echo("Excelente");
         //if($nota = 10)echo("Matrícula de honor");
 
-    }
+    //}
      
     echo("www");
     echo '<p><a href="' .$_SERVER['HTTP_REFERER']. '">Atras</a></p>';
