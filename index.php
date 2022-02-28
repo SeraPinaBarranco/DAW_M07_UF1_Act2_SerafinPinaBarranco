@@ -47,6 +47,7 @@
         $alumnos = array();
         $alumnos["Ana"]=6; 
         $alumnos["Marcos"]=5;
+        $alumnos["Joan"]=3;
         $alumnos["Laura"]=8;
 
         echo("<h3>Notas</h3>");
