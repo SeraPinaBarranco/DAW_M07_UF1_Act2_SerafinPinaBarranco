@@ -64,7 +64,7 @@
         foreach($alumnos as $value){
             $suma += $value;
         }
-        $media = sprintf('%.2f', $suma / count($alumnos));
+        $media = sprintf('%.2f', ($suma / count($alumnos)));
         echo("<p>La nota media de la clase es:  $media</p>");
 
         echo("<h3>Notas ordenas por su valor</h3>");
